@@ -1,0 +1,153 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3f51b5;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+mat-card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.quote-card, .classification-card {
+  padding: 16px;
+}
+
+mat-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.empty-quote, .loading-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  text-align: center;
+  color: #666;
+}
+
+.quote-content {
+  padding: 20px 0;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  border-left: 4px solid #3f51b5;
+  padding-left: 16px;
+  margin: 0;
+  color: #333;
+}
+
+.guess-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.guess-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.user-guess {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.classifying {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}
+
+.result-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.toxic {
+  background-color: #f44336;
+  color: white;
+}
+
+.not-toxic {
+  background-color: #4caf50;
+  color: white;
+}
+
+.user-comparison {
+  margin-top: 20px;
+}
+
+.correct {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: #f44336;
+  font-weight: bold;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px !important;
+}
+
+button {
+  min-width: 120px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .guess-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  mat-card-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
