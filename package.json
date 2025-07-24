@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production --base-href '/aai_toxicity_classifier/'',
+    "build": "ng build --configuration production --base-href aai_toxicity_classifier",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
