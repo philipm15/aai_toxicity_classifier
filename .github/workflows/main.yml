@@ -51,7 +51,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # This should match the output path in your angular.json
-          path: './dist/aai_toxicity_classifier'
+          path: './dist/aai_toxicity_classifier/browser'
 
   deploy:
     environment:
