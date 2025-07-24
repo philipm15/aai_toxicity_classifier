@@ -32,7 +32,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
@@ -48,7 +48,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # This should match the output path in your angular.json
-          path: './dist/aai-toxicity-classifier/browser'
+          path: './dist/aai-toxicity-classifier'
 
   deploy:
     environment:
