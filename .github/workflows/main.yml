@@ -39,7 +39,7 @@ jobs:
         run: npm ci --legacy-peer-deps
 
       - name: Build
-        run: ng build --configuration production --base-href "/aai_toxicity_classifier/"
+        run: npm run build --configuration production --base-href "/aai_toxicity_classifier/"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
